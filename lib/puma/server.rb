@@ -716,7 +716,7 @@ module Puma
       if @leak_stack_on_error
         [500, {}, ["Puma caught this error: #{e.message} (#{e.class})\n#{e.backtrace.join("\n")}"]]
       else
-        [500, {}, ["A really lowlevel plumbing error occured. Please contact your local Maytag(tm) repair person.\n"]]
+        [500, {}, ["A really low level plumbing error occured. Please contact your local Maytag(tm) repair person.\n"]]
       end
     end
 
